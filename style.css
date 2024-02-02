@@ -1,0 +1,246 @@
+
+body{
+  background-color: #191d28;
+  font-weight:50;
+  font-family: "Asterone Regular", sans-serif;
+}
+
+.navbar
+{
+  margin: 10px;
+  padding: 15px 43px 5px 28px;
+}
+
+.navbar-brand img {
+    max-height: 45px;
+  }
+.navbar-light  .navbar-nav .nav-link {
+    padding: .5rem 1rem;
+    color: #ddd;
+  }
+
+  .navbar-light  .navbar-nav .nav-link:hover {
+    color: #ddd;
+}
+
+  .ulist {
+    padding-left: 280px;
+  }
+
+  .ulist a:hover
+  {
+    text-decoration: none;
+  }
+
+
+  .nav-link
+  {
+    border: 3px  solid #2e3241;
+    border-radius: 15px;
+    background-color: #2e3241;
+    text-align: center;
+  }
+  
+
+  .nav-item 
+  {
+    padding: 5px;
+  }
+
+  .timer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .timer-circle {
+    width: 30px;
+    height: 30px;
+    background-color: #3dc6c1;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+
+  .btn
+  {
+    border-radius: 8px;
+    background-color: #3dc6c1;
+    color: #ddd;
+  }
+
+  .btn:hover
+  {
+    color: #ddd;
+    text-decoration: none;
+    border: none; 
+  }
+
+
+  .mode-switch {
+    position: relative;
+    width: 50px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: #3dc6c1;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    padding: 2px;
+    background-color: #2e3241;
+  }
+  .mode-switch::before {
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #3dc6c1;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.3s ease;
+  }
+  input[type="checkbox"] {
+    display: none;
+  }
+  input[type="checkbox"]:checked + .mode-switch {
+    background-color: #3dc6c1;
+  }
+  input[type="checkbox"]:checked + .mode-switch::before {
+    transform: translateX(20px) translateY(-50%);
+  }
+  .dropdown-menu-center {
+    text-align: center;
+  }
+
+  .t-center {
+    text-align: center;
+    color: #7b7e84;
+    margin-top: 2px;
+  }
+
+  .t-center h1 {
+    font-size: 28px;
+  }
+
+  .t-center h2 {
+    font-size: 15px;
+  }
+ 
+
+
+  .custom-list-item {
+    display: inline-block;
+  }
+
+  .custom-list {   
+    margin-left: 0px;
+    margin-right: 0px;
+    text-align: center;
+ }
+
+  .custom-list-item.short {
+      color: #3dc6c1;
+      font-size: 35px;
+      width: max-content;    
+      padding:35px 0px 0px 0px;
+  }
+  
+  .custom-list-item.big {
+    font-size: 90px;
+    color: #ddd;
+    width: max-content;
+  }
+  .custom-container
+    { 
+      padding: 25px;
+    }
+    table {
+      text-align: center;
+      font-family: Arial, Helvetica, sans-serif;
+      border-collapse: separate;
+      border-spacing: 0 10px; 
+      width: 100%;
+      border: none;
+      color: #818389;
+    }
+  
+    table td,
+    #customers th {
+      padding: 12px 8px;
+      font-size: 20px;
+    }
+  
+    table td {
+      color: #fff;
+      background-color: #2e3241;
+    }
+  
+
+  
+    table th {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      text-align: center;
+      background-color: transparent;
+      color: #818389;
+      font-size: 23px;
+    }
+  
+    td:first-child,
+    th:first-child {
+      border-radius: 10px 0 0 10px;
+    }
+  
+    td:last-child,
+    th:last-child {
+      border-radius: 0 10px 10px 0;
+    }
+
+  .footer {
+      background-color: #191d28;
+      color: #72757c;
+      padding: 10px 20px;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      border-top: solid #2e3241;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: smaller;
+  }
+
+  .footer .copyright {
+      flex: 1;
+  }
+
+  .footer .support {
+      flex: 1;
+      text-align: right;
+  }
+
+  .footer button {
+      background-color: #191d28;
+      border: none;
+      color: #1791a6;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      border: 2px solid #1791a6;
+      border-radius: 5px;
+  }
+
+  .footer button:hover{
+    background-color: #1791a6;
+    color: #fff;
+  }
+
+  .volume-cell {
+    color: red; /* or any other color */
+}
